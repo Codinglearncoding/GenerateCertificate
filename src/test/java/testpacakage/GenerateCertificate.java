@@ -72,7 +72,7 @@ public class GenerateCertificate {
         // Assuming phone number and OTP login
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement phoneInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='text']")));
-        phoneInput.sendKeys("0000020232");
+        phoneInput.sendKeys("123451");
 
         driver.findElement(By.id("send-otp-btn-id")).click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("loader")));
